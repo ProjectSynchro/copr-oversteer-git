@@ -7,7 +7,7 @@ Summary:    Automatic kernel module for %{module}
 
 License:    GPLv3
 URL:        https://github.com/berarma/new-lg4ff
-Source0:    https://github.com/berarma/new-lg4ff/archive/%{version}.tar.gz
+Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz#/%{name}-v%{version}.tar.gz
 
 BuildRequires:  kernel-devel
 Requires:       akmod
