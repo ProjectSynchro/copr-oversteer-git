@@ -17,6 +17,8 @@ BuildRequires:  python3dist(pyudev)
 BuildRequires:  python3dist(pyxdg)
 BuildRequires:  python3dist(evdev)
 BuildRequires:  python3dist(matplotlib)
+BuildRequires:  python3dist(matplotlib-gtk3)
+BuildRequires:  python3dist(matplotlib-gtk3-cairo)
 BuildRequires:  python3dist(scipy)
 BuildRequires:  python3dist(numpy)
 BuildRequires:  gettext
@@ -27,6 +29,8 @@ Requires:       python3dist(pyudev)
 Requires:       python3dist(pyxdg)
 Requires:       python3dist(evdev)
 Requires:       python3dist(matplotlib)
+Requires:       python3dist(matplotlib-gtk3)
+Requires:       python3dist(matplotlib-gtk3-cairo)
 Requires:       python3dist(scipy)
 Requires:       python3dist(numpy)
 
@@ -82,6 +86,7 @@ rm oversteer/.device_manager.py.swp
 %changelog
 * Wed Jul 10 2024 Jack Greiner <jack@emoss.org> - 0.8.2-1
 - Bumped version to 0.8.2
+- Added missing matplotlib backends.
 
 * Wed Jul 10 2024 Jack Greiner <jack@emoss.org> - 0.8.1-2
 - Updated spec file to use python3dist macro when possible for Python dependencies
