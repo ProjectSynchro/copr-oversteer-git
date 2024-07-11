@@ -1,7 +1,7 @@
 %define module new-lg4ff
 
 Name:       akmod-%{module}
-Version:    0.4.1
+Version:    0.4.0
 Release:    1%{?dist}
 Summary:    Automatic kernel module for %{module}
 
@@ -46,6 +46,6 @@ if [ $1 -eq 0 ]; then
 fi
 
 %changelog
-* Thu Jul 11 2024 Jack Greiner <jack@emoss.org> - 0.4.1-1
-- Initial spec file using 0.4.1
+* Thu Jul 11 2024 Jack Greiner <jack@emoss.org> - 0.4.0-1
+- Initial spec file using 0.4.0
 
