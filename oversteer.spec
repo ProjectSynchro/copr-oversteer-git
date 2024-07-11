@@ -12,6 +12,7 @@ Source0:        %{url}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.t
 BuildArch:      noarch
 BuildRequires:  meson
 BuildRequires:  python3-devel
+BuildRequires:  python3dist(gobject)
 BuildRequires:  python3dist(pyudev)
 BuildRequires:  python3dist(pyxdg)
 BuildRequires:  python3dist(evdev)
@@ -82,6 +83,7 @@ rm oversteer/.device_manager.py.swp
 * Wed Jul 10 2024 Jack Greiner <jack@emoss.org> - 0.8.1-2
 - Updated spec file to use python3dist macro for Python dependencies
 - Removed redundant BuildRequires: python3
+- Added missing python3dist(gobject) dependency
 
 * Sat Mar 23 2024 Jan200101 <sentrycraft123@gmail.com> - 0.8.1-1
 - Initial spec
