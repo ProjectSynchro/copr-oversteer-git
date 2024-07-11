@@ -12,7 +12,7 @@ Source0:        %{url}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.t
 BuildArch:      noarch
 BuildRequires:  meson
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(gobject)
+BuildRequires:  python3dist(gi)
 BuildRequires:  python3dist(pyudev)
 BuildRequires:  python3dist(pyxdg)
 BuildRequires:  python3dist(evdev)
@@ -22,7 +22,7 @@ BuildRequires:  python3dist(numpy)
 BuildRequires:  gettext
 BuildRequires:  systemd-rpm-macros
 
-Requires:       python3dist(gobject)
+Requires:       python3dist(gi)
 Requires:       python3dist(pyudev)
 Requires:       python3dist(pyxdg)
 Requires:       python3dist(evdev)
