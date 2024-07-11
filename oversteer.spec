@@ -1,8 +1,8 @@
 %define debug_package %{nil}
 
 Name:           oversteer
-Version:        0.8.1
-Release:        2%{?dist}
+Version:        0.8.2
+Release:        1%{?dist}
 Summary:        Steering Wheel Manager for GNU/Linux
 
 License:        GPL-3.0-only
@@ -80,6 +80,9 @@ rm oversteer/.device_manager.py.swp
 %pycached %{python3_sitelib}/oversteer/__init__.py
 
 %changelog
+* Wed Jul 10 2024 Jack Greiner <jack@emoss.org> - 0.8.2-1
+- Bumped version to 0.8.2
+
 * Wed Jul 10 2024 Jack Greiner <jack@emoss.org> - 0.8.1-2
 - Updated spec file to use python3dist macro when possible for Python dependencies
 - Removed redundant BuildRequires: python3
