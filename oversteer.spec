@@ -2,15 +2,13 @@
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global git_date 20240617T121819Z
 %global tag v0.8.2
-%global clean_tag %(echo %{tag} | sed 's/^v//')
 
 %define debug_package %{nil}
 
 Name:           oversteer
-Version:        %{clean_tag}^%{git_date}.g%{shortcommit}
+Version:        %{tag}^%{git_date}.g%{shortcommit}
 Release:        %autorelease
 Summary:        Steering Wheel Manager for GNU/Linux
-
 License:        GPL-3.0-only
 URL:            https://github.com/berarma/oversteer
 Source0:        %{url}/archive/%{commit}.tar.gz
