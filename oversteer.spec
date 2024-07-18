@@ -60,9 +60,9 @@ driver module that enables the hardware on Linux.
 %files -f %{name}.lang
 %license LICENSE
 /usr/bin/oversteer
-%{_datadir}/icons/hicolor/scalable/apps/org.berarma.Oversteer.svg
-%{_datadir}/applications/org.berarma.Oversteer.desktop
-%{_datadir}/metainfo/org.berarma.Oversteer.appdata.xml
+%{_datadir}/icons/hicolor/scalable/apps/io.github.berarma.Oversteer.svg
+%{_datadir}/applications/io.github.berarma.Oversteer.desktop
+%{_datadir}/metainfo/io.github.berarma.Oversteer.appdata.xml
 %{_udevrulesdir}/99-thrustmaster-wheel-perms.rules
 %{_udevrulesdir}/99-logitech-wheel-perms.rules
 %{_udevrulesdir}/99-fanatec-wheel-perms.rules
