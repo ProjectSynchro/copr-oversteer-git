@@ -13,7 +13,7 @@ Summary:        Steering Wheel Manager for GNU/Linux
 
 License:        GPL-3.0-only
 URL:            https://github.com/berarma/oversteer
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz#/%{name}-v%{version}.tar.gz
+Source0:        %{url}/archive/%{commit}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  meson
