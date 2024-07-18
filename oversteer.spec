@@ -2,11 +2,12 @@
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global git_date 20240617T121819Z
 %global tag v0.8.2
+%global clean_tag %(echo %{tag} | sed 's/^v//')
 
 %define debug_package %{nil}
 
 Name:           oversteer
-Version:        %{tag}^%{git_date}.g%{shortcommit}
+Version:        %{clean_tag}^%{git_date}.g%{shortcommit}
 Release:        %autorelease
 Summary:        Steering Wheel Manager for GNU/Linux
 License:        GPL-3.0-only
@@ -43,7 +44,7 @@ It doesn't provide hardware support, you'll still need a
 driver module that enables the hardware on Linux.
 
 %prep
-%autosetup
+%autosetup -p1 -N -n %{name}-%{commit}
 
 %build
 %meson \
