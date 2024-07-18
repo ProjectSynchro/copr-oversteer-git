@@ -47,9 +47,6 @@ driver module that enables the hardware on Linux.
 %prep
 %autosetup
 
-# Stray vim swap file managed to make it into the project
-rm oversteer/.device_manager.py.swp
-
 %build
 %meson \
     -Dpython="%{python3}" \
