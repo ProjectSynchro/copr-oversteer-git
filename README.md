@@ -1,3 +1,6 @@
+> ⚠️ **Notice:**  
+> This project has migrated to **[Codeberg](https://codeberg.org/Synchro/copr-oversteer-git)**.  
+
 # Copr repository for Oversteer - Steering Wheel Manager for Linux
 
 Oversteer manages steering wheels on Linux using the features provided by the loaded modules. It doesn't provide hardware support, you'll still need a driver module that enables the hardware on Linux.
